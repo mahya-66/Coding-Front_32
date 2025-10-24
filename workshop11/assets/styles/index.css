@@ -1,0 +1,258 @@
+:root {
+    --sm-container-width: 360px;
+    --lg-container-width: 800px;
+    --yellow:#FFC857;
+    --red:#DB3A34;
+    --dark-gray:#323031;
+    --light-gray:rgba(255, 255, 255, 0.2);
+    font-family: "Vazirmatn", sans-serif;
+}
+* { 
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-gray);
+}
+html {
+    scrollbar-width: smooth;
+}
+.container {
+    --container-width: var(--sm-container-width);
+    width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-top: 150px;
+}
+@media screen and (min-width: 720px) {
+    .container { 
+        --container-width: var(--lg-container-width); 
+}
+}
+header {
+    background-color: var(--yellow);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    height: 60px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index:1000;
+}
+.menu-wrapper {
+  position: fixed;
+  top: 60px; 
+  left: 0;
+  width: 100%;
+  background-color: var(--yellow);
+  z-index: 999;
+  overflow-x: auto; 
+  white-space: nowrap;
+  padding: 10px 0;
+}
+nav {
+    background-color: var(--yellow);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+nav a { 
+    text-decoration: none;
+     color: inherit; 
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+}
+.menu_items { 
+    list-style: none; 
+}
+.menu_name { 
+    font-size: 10px; 
+    margin-top: 4px; 
+}
+.food {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+.food_pic { 
+    padding-top: 6px; 
+}
+.Card {
+    background-color: var(--light-gray);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: space-between;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    direction: rtl;
+}
+.Card_context {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 70%;
+}
+.Card_title {
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    text-align: right;
+}
+.Card_body {
+    font-size: 10px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.7);
+    margin: 0;
+    white-space: normal;
+    overflow: visible;
+}
+.Card_img img {
+    width: 84px;
+    height: 84px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+.Card_price {
+    display: flex;
+    align-items: start;
+    gap: 4px;
+    direction: ltr;
+}
+.price_number { 
+    font-size: 21px; color: white; 
+}
+.price_labels {
+    display: flex;
+    flex-direction: column;
+}
+.price_unit,
+.price_currency { 
+    font-size: 8px;
+    font-weight: 700;
+    color: white; 
+}
+.title { 
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--red);
+    text-align: center;
+    margin-top: 20px; 
+}
+section {
+    margin-bottom: 40px; 
+}
+@media screen and (min-width:720px) {
+    .title {
+        text-align: right;
+}
+header {
+    height:100px;
+}
+header img {
+    width: 95px;
+    height: 90px;
+}
+    nav {
+        width: 180px; 
+        background-color: transparent;   
+        padding: 15px;
+        position: fixed;
+        right: 0; 
+        top: 150px;              
+        bottom: 0;           
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;    
+}
+    .menu {
+        flex-direction: column;
+        gap: 12px; 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+}
+    .food {
+        background-color: var(--yellow); 
+        border-radius: 6px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: end;
+        padding: 8px;
+        width: 100%; 
+        height: auto;
+}
+    .food_pic {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+}
+    .menu_name {
+        font-size: 14px;
+        margin: 0;
+}
+    body {
+        margin-right: 180px; 
+}
+    .Cards_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-bottom: 0;
+        direction: rtl;
+}
+    .Card {
+        flex-direction: column-reverse; 
+        padding: 20px;
+        height: auto;
+        width:394px;
+        height:335px;
+}
+    .Card_img img {
+        width: 370px;
+        height: 200px;
+}
+    .Card_price {
+        display: flex;
+        align-items: start;
+        justify-content: start; 
+        gap: 6px;
+        direction: ltr; 
+}
+    .price_number { 
+        font-size: 21px; 
+        color: white; 
+}
+    #pizza,
+    #sandwich,
+    #taco,
+    #burrito {
+        margin-bottom:40px;
+        border-top: 1px solid var(--red);
+        padding-top: 24px; 
+}
+.Card_context {
+    max-width: 100%;
+    margin-top: 12px;
+}
+}

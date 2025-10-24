@@ -1,0 +1,284 @@
+:root {
+    --lalezar-font:"Lalezar", sans-serif;
+    --vazirmatn-font:"Vazirmatn", sans-serif;
+    --sm-container-width: 393px;
+    --mid-container-width: 720px;  
+    --lg-container-width: 1140px;  
+    --lighter-color:rgba(27, 23, 23, 0.65);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color:#1B1717;
+}
+body a {
+    text-decoration: none;
+    color:inherit;
+}
+#countries,
+#products {
+    margin-top: 60px;
+}
+.container {
+    --container-width:var(--sm-container-width);
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--container-width);
+    padding:0 16px;
+}
+@media  screen and (min-width:720px) and (max-width:900px) {
+    .container {
+        --container-width:var(--mid-container-width);
+    }
+}
+@media screen and (min-width:900px) {
+    .container {
+    --container-width:var(--lg-container-width);
+    }
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    margin: 0;
+}
+#countries,
+#products {
+    margin-top: 120px;
+}
+.logo {
+    margin:30px 174px;
+}
+#hero {
+    font-family: var(--vazirmatn-font);
+}
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+.shoe_head {
+    display: none;
+}
+.people {
+    display: flex;
+    gap:10px;
+}
+.number {
+    font-weight: 700;
+}
+.people_img {
+    display: flex;
+    direction: ltr;
+    flex-direction: row-reverse;
+    margin-left:12px;
+}
+.people_img img {
+    margin-left: -10px;
+    width:24px;
+    height:24px;
+    object-fit: cover;
+}
+.customer {
+    color: var(--lighter-color);
+}
+.title {
+    font-family: var(--lalezar-font);
+    font-size:48px;
+}
+.text {
+    color: var(--lighter-color);
+    font-family: var(--vazirmatn-font);
+    max-width:450px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-top: 10px;
+}
+.btn_1 {
+    font-family: var(--vazirmatn-font);
+    color: var(--lighter-color);
+    border:1px solid var(--lighter-color);
+    border-radius: 35px;
+    padding:8px 32px;
+}
+.btn_1:hover {
+    color:#1B1717;
+    border: 1px  solid #1B1717;
+}
+.btn_2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap:10px;
+    font-family: var(--vazirmatn-font);
+    color:white;
+    background-color: #CE1212;
+    border-radius: 35px;
+    padding:8px 32px;
+}
+.btn_2:hover {
+    background-color: #810000;
+}
+@media screen and (min-width: 700px) {
+    .hero-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .shoe_head {
+        display: block;
+        filter: drop-shadow(15px 30px 60px #00000033);
+        max-width: 300px;
+        height: auto;
+    }
+    .buttons {
+        flex-direction: row-reverse;
+    }
+    .title {
+        font-size:64px;
+    }
+    .hero-text {
+        align-items: start; 
+        margin-right:70px;
+    }
+}
+#countries {
+    font-family: var(--vazirmatn-font);
+}
+.countries-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+}
+.countries_title {
+    font-weight: 500;
+    font-size: 16px;
+}
+.countries {
+    display: flex;
+    gap:25px;
+}
+.countries_context {
+    text-align: center;
+}
+.countries_name {
+    color:var(--lighter-color);
+    font-weight: 500;
+}
+.countries_icon {
+    filter:grayscale(100%) brightness(200%) contrast(200%);
+    transition: filter 300ms;
+}
+.countries_context:hover .countries_icon {
+    filter:grayscale(0%);
+}
+.products img {
+    display: block;
+}
+.products_title {
+    font-family: var(--lalezar-font);
+    font-size: 36px;
+}
+.products_body {
+    font-family: var(--vazirmatn-font);
+    color:var(--lighter-color);
+    margin-top:19px;
+    max-width:465px;
+}
+.products img:first-of-type {
+    margin-top:35px;
+}
+.products img {
+    margin-bottom: 15px;
+}
+.products {
+    gap:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.products_info {
+    font-family: var(--vazirmatn-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.products_info_2 {
+    font-family: var(--vazirmatn-font);
+    display: none;
+}
+.products_name {
+    font-weight:500;
+    font-size: 16px;
+}
+.products_more {
+    color:var(--lighter-color);
+}
+.btn_3 {
+    font-family: var(--vazirmatn-font);
+    color:var(--lighter-color);
+    border:1px solid var(--lighter-color);
+    padding:8px 32px;
+    border-radius: 35px;
+    margin-top:10px;
+    margin-bottom:40px;
+}
+.btn_3:hover {
+    color:#1B1717;
+    border: 1px solid #1B1717;
+}
+@media screen and (min-width:720px) and (max-width:900px) {
+     .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap:25px;
+        width:100%;
+    }
+    .products_info_2 {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+.btn_3 {
+    grid-column: 1 / -1; 
+    justify-self: center; 
+}
+}
+@media screen and (min-width: 900px) {
+    .products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        gap:25px;
+        width:100%;
+    }
+    .products_info_2 {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+.btn_3 {
+    grid-column: 1 / -1; 
+    justify-self: center; 
+}
+}

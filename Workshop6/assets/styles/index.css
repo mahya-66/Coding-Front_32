@@ -1,0 +1,148 @@
+* {
+    box-sizing:border-box;
+}
+body {
+    margin:0;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.container {
+    margin-left: auto;
+    margin-right:auto;
+    width:100%;
+}
+.hero {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    background: linear-gradient(to right,#4062BB,#59C3C3);
+    color:white;
+}
+.hero-wrapper {
+    height:100vh;
+    width:100%;
+}
+.hero-title {
+    font-size:48px;
+}
+.hero-text {
+    font-size:19px;
+    opacity:0.7;
+}
+.snapdrop {
+    padding-bottom:100px;
+}
+.hero-screen img {
+    padding-right:211px;
+    margin-bottom: -210px;
+}
+.hero-box {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.download-buttons a {
+    text-decoration: none;
+}
+.p-l-spacer {
+    padding-left:241px;
+}
+.p-l-spacer-2 {
+    padding-left:235px;
+}
+.featured {
+    background-color: #F2F7F8;
+}
+.featured-whole {
+    display:flex;
+    padding-top:34px;
+    padding-bottom:34px;
+    gap:50px;
+   
+}
+.featured-img {
+    display:flex;
+    gap:50px;
+}
+.featured-text {
+    padding-left: 234px;
+    opacity:0.5;
+}
+p {
+    margin:0;
+    padding:0;
+}
+.amazing-title {
+    font-size:38px;
+    padding-top:120px;
+}
+.amazing-features-context {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.amazing-text {
+    opacity:0.5;
+    width:662px;
+    height:59px;
+}
+.amazing-img {
+    padding-top:35px;
+    width:315px;
+    height:210px;
+}
+.img-part {
+    display:flex;
+    justify-content:center;
+    gap:24px;
+}
+.text-center {
+    text-align:center;
+}
+.amazing-img p {
+    opacity:0.5;
+}
+.testmonals {
+    background-color: #F2F7F8;
+    padding-top:65px;
+    padding-bottom:65px;
+    margin-top:138px;
+    
+}
+.testmonals-content {
+    display:flex;
+    justify-content: center;
+}
+.txt {
+    padding-top:24px;
+    width:500px;
+    height:76px;
+    opacity: 0.5
+}
+.editor {
+  color:#4062BB;
+  opacity:1;  
+}
+.footer {
+    background-color: #4062BB;
+    height:240px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-txt {
+    color:white;
+}
+.social-icons {
+    display:flex;
+    gap:38px;
+    justify-content: center;
+    padding-top:30px;
+}
+.profile-photo a {
+    text-decoration: none;
+}

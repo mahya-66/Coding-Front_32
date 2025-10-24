@@ -1,0 +1,248 @@
+:root {
+    --gray-1:#FDFCFA;
+    --green:#346671;
+    --gray-2:#ECEBE6CC;
+    font-family: "Vazirmatn", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width:100%;
+    margin-right:auto;
+    margin-left: auto;
+    padding-right:120px;
+}
+body {
+    margin:0;
+    padding:0;
+}
+#hero,
+#hero::after {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: url(../images/bg_2.png) , linear-gradient(to bottom , rgba(52, 102, 113) , rgb(228, 189, 111) );
+    height:100vh;
+    padding:0 105px;
+}
+#hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/images/bg.svg);
+    pointer-events: none;
+}
+#hero .hero_title {
+    color:var(--gray-1);
+    font-size: 80px;
+}
+#milad-tower,
+#latest-tours {
+    margin-top: 120px;
+}
+.milad-tower_context {
+    display: flex;
+    direction: ltr;
+    gap:162px;
+}
+.context-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.context_text {
+    width:347px;
+    margin-left: 90px;
+}
+.context_text_2 {
+    width:100%;
+}
+.txt-right {
+    text-align: right;
+}
+.txt-left {
+    text-align: left;
+}
+.txt-center {
+    text-align: center;
+}
+.tehran,
+.modern {
+    font-weight: 700;
+    font-size: 80px;
+}
+.modern {
+    margin-left: 90px;
+}
+.tehran {
+    margin-right: 110px;
+}
+.capital {
+    font-size: 90px;
+}
+.other {
+    font-size: 20px;
+    opacity: 0.4;
+}
+.tower-text {
+    color:white;
+    display: flex;
+    align-items: end;
+    margin: 0;
+    padding: 0 40px 50px 110px;
+    background-color: var(--green);
+    background-image: url(../images/milad-tower-2.jpg);
+    background-size: cover;
+    width: 540px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    direction: rtl;
+    box-shadow: 0px 90px 100px -100px #000000B2;
+}
+.milad_title {
+    font-size: 18px;
+}
+.milad_text {
+    font-size: 12px;
+}
+.Tehran-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap:50px;
+    background: linear-gradient(to left, var(--gray-1) 0 , var(--gray-1) 295px , var(--green) 295px);
+}
+.Tehran-tour {
+    padding:40px calc(50px + 300px) 44px 0;
+    position: relative;
+    display:inline-block;
+    border-bottom-right-radius: 24px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.Tehran-tour::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom:47px;
+    width:100%;
+    height: 2px;
+    background-color: var(--gray-1);
+    overflow: hidden;
+}
+.tours-text {
+    font-weight: 700;
+    font-size:48px;
+    width:172px;
+    word-wrap: break-word;
+}
+.tours-link {
+    text-decoration: none;
+    background-color: #A63021;
+    color: white;
+    padding:12px 24px;
+    border-radius: 4px;
+    margin-top: 48px;
+}
+.latest-tours-wrapper {
+    display: flex;
+    gap:425px;
+}
+.tours-context-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.dates {
+    background-color: #D0D0D0;
+    border-radius: 24px;
+    padding:24px 32px;
+    list-style: none;
+    margin-bottom: 225px;
+    border:1px solid rgba(128, 128, 128, 0.3);
+}
+.dates_items_title {
+    opacity:0.4;
+}
+.dates_items:not(:last-of-type) {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding: 0;
+}
+.dates_items_date_3,
+.dates_items_date_2,
+.dates_items_date_1 {
+    font-weight: 700;
+    font-size: 28px;
+}
+.dates_items-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap:12px;
+}
+.space-left {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.4;
+}
+.space-left::after{
+     content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='21' height='22' viewBox='0 0 21 22' fill='none'><path d='M0.769999 12.8287L4.15625 16.25C4.23759 16.332 4.33437 16.3971 4.441 16.4415C4.54762 16.4859 4.66199 16.5088 4.7775 16.5088C4.89301 16.5088 5.00738 16.4859 5.114 16.4415C5.22063 16.3971 5.31741 16.332 5.39875 16.25C5.56172 16.086 5.65319 15.8643 5.65319 15.6331C5.65319 15.4019 5.56172 15.1802 5.39875 15.0162L2.28375 11.875L20.125 11.875C20.3571 11.875 20.5796 11.7828 20.7437 11.6187C20.9078 11.4546 21 11.232 21 11C21 10.7679 20.9078 10.5453 20.7437 10.3812C20.5796 10.2172 20.3571 10.125 20.125 10.125L2.23125 10.125L5.39875 6.96621C5.48076 6.88487 5.54586 6.7881 5.59028 6.68147C5.6347 6.57484 5.65757 6.46047 5.65757 6.34496C5.65757 6.22945 5.6347 6.11509 5.59028 6.00846C5.54586 5.90183 5.48076 5.80506 5.39875 5.72371C5.31741 5.6417 5.22063 5.57661 5.11401 5.53218C5.00738 5.48776 4.89301 5.46489 4.7775 5.46489C4.66199 5.46489 4.54762 5.48776 4.441 5.53218C4.33437 5.57661 4.23759 5.6417 4.15625 5.72371L0.769999 9.11871C0.278424 9.6109 0.00231034 10.2781 0.00231028 10.9737C0.00231022 11.6693 0.278424 12.3365 0.769999 12.8287Z' fill='%23000' fill-opacity='0.6'/></svg>");
+     margin-right: 320px;
+}
+#latest-tours {
+    background-image: url(../images/mountains\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#places {
+    background-color: var(--green);
+}
+.places-wrapper {
+    padding-top:95px;
+    padding-right:120px;
+    display: flex;
+    gap:302px;
+}
+.places-visit {
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0;
+    width:297px;
+    word-wrap: break-word;
+}
+.places-list {
+    list-style:disc;
+    counter-reset: persian-counter;
+    padding:0;
+}
+.places_items {
+    color:white;
+    font-weight:900;
+    font-size:48px;
+    counter-increment: persian-counter;
+    margin: 5px 0;
+    position: relative;
+}
+.places_items::before {
+    content: counter(persian-counter , persian );
+    content: '۰' counter(persian-counter , persian );
+    position: absolute;
+    margin: 0 auto;
+    right: -75px;
+    color:rgba(208, 208, 208, 0.3);
+}
+.places_items::marker {
+    color:rgba(208, 208, 208, 0.3);
+    font-size: 20px;
+}

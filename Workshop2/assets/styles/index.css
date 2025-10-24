@@ -1,0 +1,36 @@
+img {
+    height: 50px;
+}
+
+div {
+    text-align: center;
+}
+.menu span {
+    margin-left: 20px;
+}
+
+p a {
+    color: red;
+}
+
+table {
+    width: 100%;
+   border-width: 2px;
+   border-style: solid;
+   border-color: rgba(211, 211, 211, 0.671);
+   border-collapse: collapse;
+}
+th {
+    border: solid 2px lightgray;
+    background: lightgray;
+}
+td {
+    border-width: 2px;
+    border-style: solid;
+    border-color:rgba(211, 211, 211, 0.671) ;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+* {
+    box-sizing:border-box;
+}
+body {
+    margin:0;
+    padding:0;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width:980px;
+}
+.header {
+    /* width:900px; */
+    height:100px;
+    background-color: black;
+}
+.delivery {
+    background-color: gold;
+    /* height:2000px; */
+    margin-top: 50px;
+}
+.hero {
+    /* width:900px; */
+    height:300px;
+    background-color: blue;
+    margin-top:50px;
+}
+.mobile {
+    height:300px;
+    background-color: blueviolet;
+    margin-top: 50px;
+}
+.best-delivered {
+    height:500px;
+    background-color: aqua;
+    margin-top:50px;
+}
+.fastest {
+    background-color: black;
+    height:400px;
+    margin-top: 50px;
+}
+.serve {
+    background-color: red;
+    height:600px;
+    margin-top: 50px;
+}
+.sales {
+    background-color: tomato;
+    height:400px;
+    margin-top: 50px;
+}
+.order {
+    background-color: rgb(84, 255, 84);
+    height:500px;
+    margin-top: 50px;
+}
+.footer {
+    background-color: gray;
+    height:100px;
+}
+h1 {
+    color:white;
+    padding:25px;
+}
